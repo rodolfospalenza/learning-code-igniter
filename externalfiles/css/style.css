@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #ECECEC;
+}
+
+.post_images {
+	border: 2px solid black;
+}
+
+.lista {
+	list-style: circle;
+}
