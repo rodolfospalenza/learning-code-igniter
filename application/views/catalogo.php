@@ -22,7 +22,7 @@
 				echo nbs(5);
 				echo $filme->fil_ano;
 				echo br(2);
-			endforeach;	
+			endforeach;
 		?>	
 	</body>
 </html>  
