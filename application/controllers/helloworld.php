@@ -8,6 +8,4 @@
 			$this->load->view("helloworld");
 		}
 	}
-
-
 ?>
