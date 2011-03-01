@@ -1,0 +1,93 @@
+@CHARSET "UTF-8";
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+
+body {
+	min-width: 560px;
+}
+
+/* ADMINISTRACAO - TOPO */
+
+div#topo {
+	height: 40px;
+	position: fixed;
+	background: url("../img/topo_bg.png") repeat-x top;
+	width: 100%;
+	
+	box-shadow: 0 2px 2px #CCC;
+   	-webkit-box-shadow: 0 2px 2px #CCC;
+   	-moz-box-shadow: 0 2px 2px #CCC;
+}
+
+div#topo_conteudo {
+	margin: auto;
+	width: 980px;
+	height: 40px;
+}
+
+a#logo {
+	height: 40px;
+	width: 150px;
+	background: yellow;
+	float: left;
+}
+
+div#menu {
+	height: 40px;
+	width: 820px;
+	float: right;
+}
+
+
+/* ADMINISTRACAO - MENU */
+
+div#menu ul.topnav {
+	list-style: none;
+	float: left;
+
+}
+	
+div#menu ul.topnav li {
+	float: left;
+	margin: 0;
+	position: relative;
+}
+
+
+div#menu ul.topnav li a{
+	padding: 11px 15px;
+	color: #BABABA;
+
+	font-size: 13px;
+	display: block;
+	text-decoration: none;
+	float: left;
+}
+
+div#menu ul.topnav li span {
+	width: 17px;
+	height: 35px;
+	float: left;
+	background: url("../img/tab.png") no-repeat center top;
+}
+
+div#menu ul.topnav li span.subhover {
+	background-position: center bottom; cursor: pointer;
+}
+
+div#menu ul.topnav li ul.subnav {
+	list-style: none;
+	position: absolute;
+	left: 0; top: 35px;
+	background: #333;
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	width: 170px;
+	border: 1px solid #111;
+}
