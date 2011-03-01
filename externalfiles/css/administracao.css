@@ -62,7 +62,6 @@ div#menu ul.topnav li {
 div#menu ul.topnav li a{
 	padding: 11px 15px;
 	color: #BABABA;
-
 	font-size: 13px;
 	display: block;
 	text-decoration: none;
@@ -70,22 +69,25 @@ div#menu ul.topnav li a{
 }
 
 div#menu ul.topnav li span {
-	width: 17px;
-	height: 35px;
+	width: 5px;
+	height: 6px;
 	float: left;
 	background: url("../img/tab.png") no-repeat center top;
 }
 
 div#menu ul.topnav li span.subhover {
-	background-position: center bottom; cursor: pointer;
+	background-position: center bottom; 
+	cursor: pointer;
 }
 
 div#menu ul.topnav li ul.subnav {
 	list-style: none;
 	position: absolute;
-	left: 0; top: 35px;
+	left: 15px; 
+	top: 40px;
 	background: #333;
-	margin: 0; padding: 0;
+	margin: 0; 
+	padding: 0;
 	display: none;
 	float: left;
 	width: 170px;

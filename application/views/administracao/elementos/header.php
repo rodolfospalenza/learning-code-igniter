@@ -13,8 +13,11 @@
 			?>
 			
 			<script type="text/javascript" 
-					src="externalfiles/js/jquery-1.5.1.min"
-				></script>	
+					src="<?php echo base_url(); ?>externalfiles/js/jquery-1.5.1.min.js">
+					</script>
+			<script type="text/javascript"
+					src="<?php echo base_url(); ?>externalfiles/js/menu.js">
+					</script>		
 	</head>
 
 	<body>
