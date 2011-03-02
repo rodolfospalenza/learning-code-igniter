@@ -4,24 +4,24 @@
 	padding: 0;
 	margin: 0;
 	font-family: Arial, sans-serif;
+	outline: 0;
 }
-
 
 body {
 	min-width: 560px;
+	background: #F1EEEA;
 }
 
 /* ADMINISTRACAO - TOPO */
-
 div#topo {
 	height: 40px;
 	position: fixed;
 	background: url("../img/topo_bg.png") repeat-x top;
 	width: 100%;
-	
 	box-shadow: 0 2px 2px #CCC;
-   	-webkit-box-shadow: 0 2px 2px #CCC;
-   	-moz-box-shadow: 0 2px 2px #CCC;
+	-webkit-box-shadow: 0 2px 2px #CCC;
+	-moz-box-shadow: 0 2px 2px #CCC;
+	border-bottom: 1px solid #020202;
 }
 
 div#topo_conteudo {
@@ -33,7 +33,7 @@ div#topo_conteudo {
 a#logo {
 	height: 40px;
 	width: 150px;
-	background: yellow;
+	background: url("../img/alligator_logo.png") no-repeat top;
 	float: left;
 }
 
@@ -43,24 +43,20 @@ div#menu {
 	float: right;
 }
 
-
 /* ADMINISTRACAO - MENU */
-
 div#menu ul.topnav {
 	list-style: none;
 	float: left;
-
 }
-	
+
 div#menu ul.topnav li {
 	float: left;
 	margin: 0;
 	position: relative;
 }
 
-
-div#menu ul.topnav li a{
-	padding: 11px 15px;
+div#menu ul.topnav li a {
+	padding: 13px 15px;
 	color: #BABABA;
 	font-size: 13px;
 	display: block;
@@ -68,28 +64,71 @@ div#menu ul.topnav li a{
 	float: left;
 }
 
+div#menu ul.topnav li a:hover {
+	color: #FFF;
+}
+
 div#menu ul.topnav li span {
-	width: 5px;
-	height: 6px;
+	width: 8px;
+	height: 5px;
 	float: left;
-	background: url("../img/tab.png") no-repeat center top;
+	background: url("../img/seta_topmenu.png") no-repeat center;
+	margin: 19px 0 0 -8px;
 }
 
 div#menu ul.topnav li span.subhover {
-	background-position: center bottom; 
 	cursor: pointer;
 }
 
 div#menu ul.topnav li ul.subnav {
 	list-style: none;
 	position: absolute;
-	left: 15px; 
-	top: 40px;
-	background: #333;
-	margin: 0; 
-	padding: 0;
+	left: 0px;
+	top: 41px;
+	margin: 0;
 	display: none;
 	float: left;
-	width: 170px;
-	border: 1px solid #111;
+	border: 7px solid rgba(0, 0, 0, 0.1);
+	border-top: none;
+	border-radius-bottomright: 5px;
+	border-radius-bottomleft: 5px;
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius: 0 0 5px 5px;
+	-moz-background-clip: border; /* Firefox 3.6 */
+	-webkit-background-clip: border; /* Safari 4? Chrome 6? */
+	background-clip: border-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+	-moz-background-clip: padding; /* Firefox 3.6 */
+	-webkit-background-clip: padding; /* Safari 4? Chrome 6? */
+	background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+	-moz-background-clip: content; /* Firefox 3.6 */
+	-webkit-background-clip: content; /* Safari 4? Chrome 6? */
+	background-clip: content-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+
+div#menu ul.topnav li ul.subnav li {
+	background: #131313;
+	min-width: 150px;
+	border: 2px solid #ADADAD;
+	border-top: none;
+	border-bottom: 1px groove #323232;
+}
+
+div#menu ul.topnav li ul.subnav li.subnavlast {
+	border-bottom: 2px solid #ADADAD;
+	border-radius-bottomright: 1px;
+	border-radius-bottomleft: 1px;
+	-webkit-border-bottom-right-radius: 1px;
+	-webkit-border-bottom-left-radius: 1px;
+	-moz-border-radius: 0 0 1px 1px;
+}
+
+div#menu ul.topnav li ul.subnav li a {
+	background: url("../img/seta_submenu.png") no-repeat left;
+	padding: 8px 8px 8px 15px;
+	margin-left: 8px;
+}
+
+div#menu ul.topnav li ul.subnav li a:hover {
+	background: url("../img/seta_submenu_hover.png") no-repeat left;
 }

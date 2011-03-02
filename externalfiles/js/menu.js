@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	$("ul.subnav").parent().append("<span></span>");
 
-	$("ul.topnav li span").click(function() {
+	$("ul.topnav li *").click(function() {
 		$(this).parent().find("ul.subnav").slideDown('fast').show();
 
 		$(this).parent().hover(function() {

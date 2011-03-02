@@ -8,15 +8,17 @@
 				<li><a href="#">home</a></li>
 				<li><a href="#">tutorials</a>
 				<ul class="subnav">
-					<li><a href="#">Sub Nav Link</a></li>
-					<li><a href="#">Sub Nav Link</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">advertise</a></li>
+					<li><a href="#">submit</a></li>
+					<li class="subnavlast"><a href="#">contact</a></li>
 				</ul>
 				</li>
 				<li><a href="#">resources</a>
-				<!-- <ul class="subnav">
+				<ul class="subnav">
 					<li><a href="#">Sub Nav Link</a></li>
-					<li><a href="#">Sub Nav Link</a></li>
-				</ul> -->
+					<li class="subnavlast"><a href="#">Sub Nav Link</a></li>
+				</ul>
 				</li>
 				<li><a href="#">about</a></li>
 				<li><a href="#">advertise</a></li>
