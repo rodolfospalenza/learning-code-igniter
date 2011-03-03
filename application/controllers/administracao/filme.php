@@ -1,5 +1,5 @@
 <?php
-	class Home extends CI_Controller {
+	class Filme extends CI_Controller {
 		function __construct() {
 			parent::__construct();
 			
@@ -9,8 +9,9 @@
 			$this->load->view('administracao/elementos/footer');
 		}
 		
-		function index() {
-			$this->load->view('administracao/index');
+		function listar() {
+			$this->load->model('administracao/filme_model');
+			$dados['filmes'] = $this->filme_model->listar();
+			$this->load->view('administracao/filmes/listagem', $dados);
 		}
 	}
-?>
